@@ -12,7 +12,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
       <Header></Header>
       <Gradient></Gradient>
 
-      <main className="pt-32 px-52">{children}</main>
+      <main className="pt-32 px-72">{children}</main>
     </div>
   );
 };

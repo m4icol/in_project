@@ -3,7 +3,7 @@ import { CSSProperties } from "react";
 
 const GradientCircle = () => {
   const gradientStyle: CSSProperties = {
-    zIndex: 1,
+    zIndex: -1,
     position: "absolute",
     width: "1500px",
     height: "1500px",

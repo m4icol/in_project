@@ -5,7 +5,7 @@ import { Documents } from "./pages/Documents";
 
 function App() {
   return (
-    <div className="bg-CS-principal-white h-screen">
+    <div className=" h-screen">
       <Router>
         <Routes>
           <Route path="/" element={<Dashboard />} />
