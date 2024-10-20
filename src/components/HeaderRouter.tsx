@@ -1,15 +1,19 @@
 import { NavLink } from "react-router-dom";
+import { DashboardIcon, DocumentsIcon, CharIcon } from "./IconsSVG";
 
 const menuItems = [
   {
+    icon: <DashboardIcon />,
     item: "DASHBOARD",
     url: "/",
   },
   {
+    icon: <DocumentsIcon />,
     item: "DOCUMENTOS",
     url: "/documentos",
   },
   {
+    icon: <CharIcon />,
     item: "BALANCES",
     url: "/balances",
   },
@@ -18,7 +22,7 @@ const menuItems = [
 export function HeaderRouter() {
   return (
     <ul className="flex flex-row gap-10 items-center">
-      {menuItems.map(({ item, url }, index) => (
+      {menuItems.map(({ item, url, icon }, index) => (
         <NavLink
           to={url}
           key={index}
@@ -35,7 +39,10 @@ export function HeaderRouter() {
           }
           className="font-bold"
         >
-          <p>{item}</p>
+          <p className="flex items-center gap-2">
+            {icon}
+            {item}
+          </p>
         </NavLink>
       ))}
     </ul>
