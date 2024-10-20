@@ -9,7 +9,7 @@ const GradientCircle = () => {
     height: "1500px",
     bottom: "20%",
     left: "10%",
-    background: `radial-gradient(circle, rgba(0,0,255,0.13) 0%, rgba(0,0,0,0) 70%)`,
+    background: `radial-gradient(circle, rgba(0,0,255,0.1) 0%, rgba(0,0,0,0) 70%)`,
   };
 
   return <div style={gradientStyle} />;

@@ -4,11 +4,9 @@ export function Dashboard() {
   return (
     <Layout>
       <div>
-        <p className="text-CS-text-little-white font-semibold">
-          PANEL (COMERCIAL)
-        </p>
+        <p className="text-CS-text-little-white font-semibold">HEY, USERNAME</p>
         <h1 className="text-2xl text-CS-text-hard-white font-bold">
-          HEY, USERNAME
+          MI PANEL (COMERCIAL)
         </h1>
       </div>
     </Layout>

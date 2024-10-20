@@ -12,6 +12,8 @@ export default {
         "CS-text-hard-white": "hsl(0, 0, 20)",
         "CS-text-little-white": "hsl(0, 0, 60)",
 
+        "CS-border-component": "hsl(0, 0, 75)",
+
         "CS-pallete-blue": "hsl(223, 89, 82)",
       },
     },
