@@ -1,7 +1,18 @@
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { Balance } from "./pages/Balance";
+import { Dashboard } from "./pages/Dashboard";
+import { Documents } from "./pages/Documents";
+
 function App() {
   return (
-    <div className="bg-blue-500 text-white p-4 rounded">
-      <h1 className="text-2xl font-bold">Hola, Tailwind en React!</h1>
+    <div className="bg-CS-principal-white h-screen">
+      <Router>
+        <Routes>
+          <Route path="/" element={<Dashboard />} />
+          <Route path="/documentos" element={<Documents />} />
+          <Route path="/balances" element={<Balance />} />
+        </Routes>
+      </Router>
     </div>
   );
 }
